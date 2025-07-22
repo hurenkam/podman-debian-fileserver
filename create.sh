@@ -10,7 +10,7 @@ podman create \
         --publish=2222:22 \
         --publish=9090:9090 \
         --restart=unless-stopped \
-        debian-fileserver
+        ghcr.io/hurenkam/debian-fileserver:bookworm
 
 # Start the container:
 podman container start debian-fileserver
