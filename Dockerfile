@@ -11,6 +11,9 @@ RUN apt-get update && apt-get install -y \
 	wsdd \
 	samba 
 
+RUN apt-get install -y \
+	curl wget git make
+
 RUN curl -sSL https://repo.45drives.com/setup | sudo bash
 
 RUN apt-get install -y \
